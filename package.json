@@ -12,6 +12,7 @@
     "console.table": "^0.10.0",
     "fs": "0.0.1-security",
     "inquirer": "^7.0.4",
-    "mysql2": "^2.1.0"
+    "mysql2": "^2.1.0",
+    "util": "^0.12.2"
   }
 }

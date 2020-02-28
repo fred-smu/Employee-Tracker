@@ -10,7 +10,8 @@ const employee = require("./lib/employee");
 
 
 
-async function init() {
+async function init(connection) {
+ 
   inquirer.prompt([
 
     {
@@ -27,13 +28,13 @@ async function init() {
 
     switch (ansOptions.mainMenu) {
       case 'Manage Departments':
-        department.genDept();
+        department.genDept(connection);
         break;
       case 'Manage Roles':
-        roles.genRole();
+        roles.genRole(connection);
         break;
       case 'Manage Employees':
-        employee.genEmpl();
+        employee.genEmpl(connection);
         break;
       default:
         console.log("Exitting Employee Management Tool.");
