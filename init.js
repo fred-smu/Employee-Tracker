@@ -31,7 +31,7 @@ async function init(connection) {
         department.genDept(connection);
         break;
       case 'Manage Roles':
-        roles.genRole(connection);
+        roles.genRoles(connection);
         break;
       case 'Manage Employees':
         employee.genEmpl(connection);
